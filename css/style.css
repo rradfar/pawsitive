@@ -44,12 +44,18 @@ nav {
   width: 100%;
   padding: 0 3rem;
   z-index: 3; }
+  @media screen and (min-width: 992px) {
+    nav {
+      padding: 0 6rem; } }
   nav .menu-btn {
     cursor: pointer;
     background: transparent;
     width: 24px;
     height: 20px;
     margin: 14px 0; }
+    @media screen and (min-width: 992px) {
+      nav .menu-btn {
+        display: none; } }
     nav .menu-btn .bar {
       background-color: #f4f4f6;
       width: 100%;
@@ -99,15 +105,35 @@ nav {
     box-shadow: none;
     overflow-y: auto;
     overflow-x: hidden; }
+    @media screen and (min-width: 992px) {
+      nav .menu-modal {
+        background-color: transparent;
+        width: 100%;
+        order: 2;
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 4rem;
+        align-items: center;
+        position: relative;
+        left: 0; } }
     nav .menu-modal.change {
       width: 320px; }
+      @media screen and (min-width: 992px) {
+        nav .menu-modal.change {
+          width: 100%; } }
     nav .menu-modal img {
       display: inline-block;
       width: 50%;
       margin: 30px auto; }
+      @media screen and (min-width: 992px) {
+        nav .menu-modal img {
+          display: none; } }
     nav .menu-modal ul {
       display: flex;
       flex-direction: column; }
+      @media screen and (min-width: 992px) {
+        nav .menu-modal ul {
+          flex-direction: row; } }
     nav .menu-modal li {
       list-style: none;
       margin: 8px; }
@@ -116,6 +142,9 @@ nav {
       padding: 5px;
       color: #f4f4f6;
       text-decoration: none; }
+      @media screen and (min-width: 992px) {
+        nav .menu-modal a {
+          padding: 20px 10px; } }
       nav .menu-modal a:hover {
         color: #ffbaa0; }
     nav .menu-modal .modal-call {
@@ -130,6 +159,9 @@ nav {
       cursor: pointer;
       transition: all 0.3s ease;
       border: 2px solid transparent; }
+      @media screen and (min-width: 992px) {
+        nav .menu-modal .modal-call {
+          margin: 0; } }
       nav .menu-modal .modal-call:hover {
         background-color: #181818;
         border: 2px solid #ffbaa0;
@@ -149,14 +181,23 @@ nav {
           height: auto;
           margin: 0 auto;
           margin-right: 10px; }
+          @media screen and (min-width: 992px) {
+            nav .menu-modal .modal-call .icon svg {
+              margin: 0 10px; } }
       nav .menu-modal .modal-call .text {
         font-weight: 700;
         font-size: 1.6rem;
         line-height: 2rem;
         margin: 0 auto;
         padding-right: 12px; }
+        @media screen and (min-width: 992px) {
+          nav .menu-modal .modal-call .text {
+            padding-left: 12px; } }
   nav .logo {
     margin-left: 20px; }
+    @media screen and (min-width: 992px) {
+      nav .logo {
+        order: 1; } }
     nav .logo a {
       text-decoration: none; }
       nav .logo a:active, nav .logo a:focus {
@@ -167,6 +208,10 @@ nav {
       max-width: 100%;
       width: auto;
       border: none; }
+      @media screen and (min-width: 992px) {
+        nav .logo img {
+          max-width: 170px;
+          height: auto; } }
 
 .hero-wrapper {
   display: flex;
