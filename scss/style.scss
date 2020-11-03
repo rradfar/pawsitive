@@ -228,6 +228,7 @@ nav {
 
       @media screen and (min-width: $screen-lg) {
         padding: 20px 10px;
+        font-weight: $weight-bold;
       }
 
       &:hover {
@@ -349,6 +350,11 @@ nav {
   text-align: center;
   z-index: 2;
   opacity: 1;
+
+  @media screen and (min-width: $screen-lg) {
+    padding: $padding-screen-lg;
+    padding-top: 12rem;
+  }
 }
 
 .hero-copy {
@@ -361,6 +367,11 @@ nav {
     display: inline-block;
     margin-bottom: 20px;
     text-transform: uppercase;
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: 1.9rem;
+      line-height: 2.7rem;
+    }
   }
 
   h1 {
@@ -369,6 +380,11 @@ nav {
     line-height: 6.9rem;
     font-weight: $weight-normal;
     color: #fff;
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: 7.5rem;
+      line-height: 9rem;
+    }
   }
 }
 
@@ -418,14 +434,24 @@ nav {
 }
 
 .about-us {
-  padding: 112px $padding-screen-sm 224px;
+  padding: 11.2rem $padding-screen-sm 22.4rem;
   position: relative;
   max-width: 100%;
   background-color: #fff;
 
+  @media screen and (min-width: $screen-lg) {
+    padding: 11.2rem $padding-screen-lg 22.4rem;
+  }
+
   .summary {
     text-align: center;
-    margin-bottom: 80px;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+
+    @media screen and (min-width: $screen-lg) {
+      max-width: 55rem;
+      margin-bottom: 10rem;
+    }
 
     h1 {
       font-family: $cursive;
@@ -433,6 +459,11 @@ nav {
       font-size: 4.7rem;
       line-height: 5.7rem;
       color: $primary-black;
+
+      @media screen and (min-width: $screen-lg) {
+        font-size: 5.8rem;
+        line-height: 6.9rem;
+      }
     }
 
     p {
