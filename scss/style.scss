@@ -264,6 +264,15 @@ nav {
         svg g {
           fill: $primary-brand-color;
         }
+
+        @media screen and (min-width: $screen-lg) {
+          background-color: transparent;
+          color: $primary-white;
+
+          svg g {
+            fill: $primary-white;
+          }
+        }
       }
 
       .icon {
