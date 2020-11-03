@@ -434,7 +434,7 @@ nav {
 }
 
 .about-us {
-  padding: 11.2rem $padding-screen-sm 22.4rem;
+  padding: 11.2rem $padding-screen-sm;
   position: relative;
   max-width: 100%;
   background-color: #fff;
@@ -619,8 +619,31 @@ nav {
   background: #fff;
   margin-bottom: 50px;
 
+  @media screen and (min-width: $screen-lg) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image {
+    overflow: hidden;
+
+    @media screen and (min-width: $screen-lg) {
+      flex-basis: 60%;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
   .content {
     padding: 0 $padding-screen-sm;
+
+    @media screen and (min-width: $screen-lg) {
+      padding: 0 $padding-screen-lg;
+      flex-basis: 40%;
+    }
 
     h3 {
       margin-top: 40px;
@@ -629,6 +652,11 @@ nav {
       font-size: 4.7rem;
       line-height: 5.7rem;
       color: $primary-black;
+
+      @media screen and (min-width: $screen-lg) {
+        font-size: 5.8rem;
+        line-height: 6.9rem;
+      }
     }
 
     p {
@@ -638,6 +666,11 @@ nav {
       font-size: 1.4rem;
       line-height: 2.5rem;
       color: $primary-black;
+
+      @media screen and (min-width: $screen-lg) {
+        font-size: 1.6rem;
+        line-height: 2.9rem;
+      }
     }
 
     .activities {
@@ -675,6 +708,11 @@ nav {
             color: $primary-black;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+
+            @media screen and (min-width: $screen-lg) {
+              font-size: 1.4rem;
+              line-height: 1.6rem;
+            }
           }
         }
 
@@ -705,6 +743,11 @@ nav {
           letter-spacing: 0.5px;
           color: $primary-black;
           padding: 14px 24px;
+
+          @media screen and (min-width: $screen-lg) {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+          }
         }
       }
 
@@ -739,21 +782,11 @@ nav {
   }
 }
 
-.services-cats {
-  .image {
-    height: 50vh;
-    background-image: url(../assets/cat.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
 .services-dogs {
   .image {
-    height: 50vh;
-    background-image: url(../assets/dog.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    @media screen and (min-width: $screen-lg) {
+      order: 2;
+    }
   }
 }
 
