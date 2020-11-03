@@ -478,23 +478,18 @@ nav {
 }
 
 .info-cards {
+  padding: $padding-screen-sm;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: flex-start;
-  margin-left: -15px;
-  margin-right: -15px;
-  // background-image: url(../assets/path-01.jpg);
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
 
   .card {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
     max-width: 48%;
-    padding: 30px;
+    padding: 3rem;
     margin-bottom: 15px;
     justify-content: flex-start;
     border-radius: 30px;
@@ -503,6 +498,12 @@ nav {
     background-position: center center;
     overflow: hidden;
     background: $primary-white;
+
+    @media screen and (min-width: $screen-lg) {
+      flex-basis: 25%;
+      max-width: 23%;
+      padding: 4.4rem;
+    }
   }
 
   .card.card-1 {
@@ -551,6 +552,11 @@ nav {
       font-weight: $weight-normal;
       color: $primary-black;
       margin-bottom: 16px;
+
+      @media screen and (min-width: $screen-lg) {
+        font-size: 2.6rem;
+        line-height: 3.3rem;
+      }
     }
 
     span {
@@ -560,6 +566,11 @@ nav {
       line-height: 2.2rem;
       font-weight: $weight-normal;
       color: $primary-black;
+
+      @media screen and (min-width: $screen-lg) {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+      }
 
       &:last-of-type {
         margin-bottom: 28px;
@@ -590,6 +601,11 @@ nav {
       font-weight: $weight-bold;
       color: $primary-black;
       text-transform: uppercase;
+
+      @media screen and (min-width: $screen-lg) {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+      }
 
       img {
         width: 12px;
