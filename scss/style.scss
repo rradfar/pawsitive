@@ -958,6 +958,10 @@ nav {
   justify-content: space-between;
   align-items: center;
 
+  @media screen and (min-width: $screen-lg) {
+    padding: $padding-screen-lg;
+  }
+
   .value-prop {
     h3 {
       font-family: $cursive;
@@ -974,6 +978,11 @@ nav {
       font-size: 1.4rem;
       line-height: 2.5rem;
       color: $primary-black;
+
+      @media screen and (min-width: $screen-lg) {
+        font-size: 1.6rem;
+        line-height: 2.9rem;
+      }
     }
   }
 
@@ -982,7 +991,7 @@ nav {
     flex-direction: column;
     flex-basis: 50%;
     max-width: 48%;
-    padding: 20px;
+    padding: 2rem;
     margin-bottom: 15px;
     justify-content: flex-start;
     border-radius: 30px;
@@ -992,6 +1001,11 @@ nav {
     overflow: hidden;
     text-align: center;
     border: 2px solid $primary-black;
+
+    @media screen and (min-width: $screen-lg) {
+      flex-basis: 25%;
+      padding: 4rem;
+    }
 
     &:first-of-type {
       text-align: left !important;
