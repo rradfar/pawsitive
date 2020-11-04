@@ -1092,6 +1092,10 @@ nav {
   padding: 0 $padding-screen-sm;
   margin: 100px auto;
 
+  @media screen and (min-width: $screen-lg) {
+    padding: 0 $padding-screen-lg;
+  }
+
   h3 {
     font-family: $cursive;
     font-weight: $weight-normal;
@@ -1117,8 +1121,16 @@ nav {
     padding: 16px;
     transition: all 0.3s ease;
 
+    @media screen and (min-width: $screen-lg) {
+      flex-basis: 30%;
+    }
+
     &:last-of-type {
       flex-basis: 100%;
+
+      @media screen and (min-width: $screen-lg) {
+        flex-basis: 30%;
+      }
     }
 
     &:nth-of-type(3n + 1) {
@@ -1207,18 +1219,34 @@ nav {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+
+        @media screen and (min-width: $screen-lg) {
+          justify-content: center;
+        }
       }
 
       .author {
         flex-basis: 60%;
+
+        @media screen and (min-width: $screen-lg) {
+          flex-basis: 30%;
+        }
       }
 
       .comment {
         flex-basis: 40%;
+
+        @media screen and (min-width: $screen-lg) {
+          flex-basis: 30%;
+        }
       }
 
       .tag {
         flex-basis: 100%;
+
+        @media screen and (min-width: $screen-lg) {
+          flex-basis: 30%;
+        }
       }
 
       .icon {
@@ -1234,6 +1262,11 @@ nav {
           line-height: 1.3rem;
           color: #9a9a9a;
           cursor: pointer;
+
+          @media screen and (min-width: $screen-lg) {
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+          }
 
           &:hover {
             color: $primary-brand-color;
@@ -1272,6 +1305,11 @@ nav {
         line-height: 2.5rem;
         color: $primary-black;
         transition: all 0.3s ease;
+
+        @media screen and (min-width: $screen-lg) {
+          font-size: 2.4rem;
+          line-height: 2.9rem;
+        }
       }
 
       p {
@@ -1280,6 +1318,11 @@ nav {
         font-size: 1.4rem;
         line-height: 2.2rem;
         color: $primary-black;
+
+        @media screen and (min-width: $screen-lg) {
+          font-size: 1.6rem;
+          line-height: 2.6rem;
+        }
       }
     }
   }
