@@ -484,6 +484,10 @@ nav {
   justify-content: space-between;
   align-content: flex-start;
 
+  @media screen and (min-width: $screen-lg) {
+    padding: $padding-screen-lg;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -1354,30 +1358,28 @@ footer {
 }
 
 .footer-container {
-  padding: 10rem $padding-screen-sm;
+  padding: 20rem $padding-screen-sm 0;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
+  gap: 1rem;
   justify-content: space-between;
   align-items: flex-start;
 
   @media screen and (min-width: $screen-lg) {
     padding: 30rem $padding-screen-lg 0;
-    flex-flow: row nowrap;
+    gap: 0;
   }
 
   .logo-and-socials {
-    flex-basis: 100%;
-    max-width: 100%;
+    flex-basis: 48%;
     justify-content: flex-start;
     text-align: left;
     display: flex;
     flex-flow: column nowrap;
-    margin: 100px 0 30px;
+    margin: 30px 0;
 
     @media screen and (min-width: $screen-lg) {
       flex-basis: 25%;
-      max-width: 25%;
-      margin: 30px 0;
     }
 
     .logo img {
@@ -1414,6 +1416,11 @@ footer {
 
   .about {
     margin: 30px 0;
+    flex-basis: 48%;
+
+    @media screen and (min-width: $screen-lg) {
+      flex-basis: 25%;
+    }
 
     .title {
       margin-bottom: 16px;
@@ -1464,6 +1471,11 @@ footer {
 
   .links {
     margin: 30px 0;
+    flex-basis: 48%;
+
+    @media screen and (min-width: $screen-lg) {
+      flex-basis: 25%;
+    }
 
     .title {
       margin-bottom: 16px;
@@ -1501,12 +1513,11 @@ footer {
   }
 
   .newsletter {
-    width: 100%;
+    flex-basis: 48%;
     margin: 30px 0;
 
     @media screen and (min-width: $screen-lg) {
       flex-basis: 25%;
-      max-width: 25%;
     }
 
     .title {
