@@ -894,19 +894,37 @@ nav {
 .secondary-hero {
   display: flex;
   flex-flow: column nowrap;
+  overflow: hidden;
+
+  @media screen and (min-width: $screen-lg) {
+    flex-flow: row nowrap;
+    align-items: center;
+  }
 
   .hero-image {
-    background-image: url(../assets/cat-and-dog.png);
-    width: 100%;
-    height: 50vh;
-    background-size: contain;
-    background-repeat: no-repeat;
+    order: 2;
+
+    @media screen and (min-width: $screen-lg) {
+      flex-basis: 60%;
+      order: 1;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   .hero-cta {
+    order: 1;
     margin: 50px auto;
     overflow: hidden;
     transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    @media screen and (min-width: $screen-lg) {
+      flex-basis: 40%;
+      order: 2;
+    }
 
     &:hover {
       transform: rotate(12deg);
