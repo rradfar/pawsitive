@@ -791,7 +791,11 @@ nav {
 }
 
 .tips {
-  padding: 60px $padding-screen-sm 40px;
+  padding: 6rem $padding-screen-sm 4rem;
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 6rem $padding-screen-lg 4rem;
+  }
 
   h3 {
     font-family: $cursive;
@@ -807,6 +811,11 @@ nav {
   ul {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: $screen-lg) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   li {
@@ -814,6 +823,11 @@ nav {
     flex-flow: row nowrap;
     list-style: none;
     margin-bottom: 50px;
+
+    @media screen and (min-width: $screen-lg) {
+      padding: 20px;
+      flex: 1 1 30%;
+    }
 
     .icon {
       background-image: url(../assets/check.png);
@@ -855,6 +869,11 @@ nav {
       font-size: 1.8rem;
       line-height: 2.3rem;
       color: $primary-black;
+
+      @media screen and (min-width: $screen-lg) {
+        font-size: 2rem;
+        line-height: 2.8rem;
+      }
     }
 
     p {
@@ -863,6 +882,11 @@ nav {
       font-size: 1.4rem;
       line-height: 2.1rem;
       color: $primary-black;
+
+      @media screen and (min-width: $screen-lg) {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
     }
   }
 }
