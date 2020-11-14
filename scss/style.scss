@@ -478,15 +478,10 @@ nav {
 }
 
 .info-cards {
-  padding: $padding-screen-sm;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: flex-start;
-
-  @media screen and (min-width: $screen-lg) {
-    padding: $padding-screen-lg;
-  }
 
   .card {
     display: flex;
